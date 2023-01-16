@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passions</title>
+    <link href="../Style.css" rel="stylesheet">
+    <style>
+      /*liens*/
+      body {
+          background-color: #E8DFD6;
+      }
+  </style>
+</head>
+<body>
+    <header>
+        <h1> <img src="../images/square_y7kkq9jmknyo_32 (2).png"> ILEF Ben Ayed <span id="et">/ ETUDIANTE </span></h1>
+
+        <hr style="height:1px;border-width:1;color:rgb(198, 197, 197);background-color:gray">
+    </header>
+    <br>
+
+    <center>
+      <section>
+          <nav>
+  
+              <a class="activ" target="_blank" href="../acceuil.html">A PROPOS DE MOI</a>
+              <a class="activ" target="_blank" href="../pages/parcour.html">PARCOURS ACADEMIQUE</a>
+              <a class="activ" target="_blank" href="../pages/passions.html">PASSIONS</a>
+              <a class="activ" target="_blank" href="../pages/IIT.html">IIT</a>
+              <a class="activ" target="_blank" href="../pages/quizz.html">QUIZZ</a>
+              <a class="activ" target="_blank" href="../pages/contact.html">CONTACT</a>
+  
+          </nav>
+      </section>
+  </center>
+
+      </head>
+      <body>
+        <div class="one">
+          <h1 class="M">NATURE</h1><br><br>
+      </div>
+      <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="../images/img14.jpg" width="1000px" height="500px">
+        <div class="text">Caption One</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="../images/img12.jpg" width="1000px" height="500px">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="../images/img11.jpg" width="1000px" height="500px">
+        <div class="text">Caption Three</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      
+      <div class="one">
+        <h1 class="M">LECTURE</h1><br><br>
+    </div>
+    <center>
+    <img id="myImg" src="../images/ef572737ee09799ae447b9da78af219d.jpg" alt="Lecture" style="width:100%;max-width:300px">
+    <img id="myImg" src="../images/1e8a28affb92eaca7a159904e151ced8.jpg" alt="1" style="width:100%;max-width:300px"></center>
+   
+    <!-- The Modal -->
+    <div id="myModal1" class="modal1">
+      <span class="close1">&times;</span>
+      <img class="modal-content1" id="img01">
+      <div id="caption1"></div>
+    </div>
+  
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+    
+
+    <footer>
+      <table>
+          <tr>
+              <td>
+                  <p>Tel</p>
+                  <p id="H">21 958 304 </p>
+              </td>
+              <td>
+                  <p>E-mail</p>
+                  <p id="H">ilefbenayed08@gamil.com</p>
+
+              </td>
+              <td>
+                  <p> En ligne</p>
+                  <p id="H"> <a target="_blank" href="https://www.linkedin.com/feed/">
+                          <img src="../images/linkedin.png " width="20px" height="20px">
+                      </a>
+                      <a target="_blank" href="https://twitter.com/">
+                          <img src="../images/twitter.png" width="20px" height="20px">
+                      </a>
+                      <a target="_blank" href="https://www.instagram.com/?hl=fr">
+                          <img src="../images/instagram.png" width="20px" height="20px">
+                      </a>
+                      <a target="_blank" href="https://www.facebook.com/">
+                          <img src="../images/facebook.png" width="20px" height="20px">
+                      </a>
+                  </p>
+              </td>
+          </tr>
+      </table>
+
+  </footer>
+
+</body>
+</html>
